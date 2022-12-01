@@ -257,7 +257,7 @@ async function run() {
       verifyAdmin,
       verifyJWT,
       async (req, res) => {
-        const id = req.params.email;
+        const email = req.params.email;
         const filter = { email };
         const options = { upsert: true };
         const updatedDoc = {
