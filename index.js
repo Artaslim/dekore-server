@@ -261,7 +261,7 @@ async function run() {
         const filter = { email };
         const options = { upsert: true };
         const updatedDoc = {
-          $unset: {
+          $set: {
             status: "true",
           },
         };
